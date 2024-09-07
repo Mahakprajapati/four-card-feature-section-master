@@ -1,0 +1,115 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+.box{
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 0.4em;
+    box-shadow: 0em 1em 1em hsl(234deg 12% 34% / 24%);
+}
+.box h4{
+    margin: 0;
+    color: var(--Very-Dark-Blue);
+}
+.box p{
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+.box .image{
+    text-align: end;
+}
+.image img{
+    max-width: 50px;
+}
+header{
+    max-width: 440px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+header span{
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+header h1{
+    margin: 0;
+    font-size: 2.2em;
+    color: var(--Very-Dark-Blue);
+}
+p{
+    color: var(--Grayish-Blue);
+}
+main{
+    display: grid;
+    gap: 2em;
+    margin-top: 3em;
+}
+.first-container{
+    border-top: 0.3em solid var(--Cyan);
+}
+.second-container{
+    display: grid;
+    gap: 2em;
+}
+.second-first{
+    border-top: 0.3em solid var(--Red);   
+}
+.second-second{
+    border-top: 0.3em solid var(--Orange);
+}
+.third-container{
+    border-top: 0.3em solid var(--Blue);
+}
+
+@media(min-width:679px){
+    .container{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4em;
+    }
+    main{
+        max-width: 925px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+    }
+    
+}
+@media(max-width:680px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        padding: 4em 2em;
+    max-width: 375px;
+
+    }
+    header span{
+        font-size: 1.49rem;
+    }
+    header h1{
+        font-size: 1.6em;
+    }
+    main{
+        display: grid;
+        gap: 2em;
+        margin-top: 3em;
+    }
+}
